@@ -1,4 +1,4 @@
-# dan = int(input("단:"))
+# dan = int(input("원하는 단:"))
 # i = 1
 # while i <=9:
 #     print("%d * %d = %d" % (dan, i , dan * i))

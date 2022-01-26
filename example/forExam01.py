@@ -14,9 +14,9 @@
 # for dan1 in range(1, 10, 1):
 #     gop = dan * dan1
 #     print("%d * %d = %d " % (dan, dan1, gop))
-#
 
-dan = int(input("단:"))
+
+dan = int(input("알고 싶은 단:"))
 for i in range(1, 10):
     print("%d * %d = %d" %(dan, i, dan* i))
 
