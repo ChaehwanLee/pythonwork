@@ -9,7 +9,7 @@
 #     print("음수")
 
 num = int(input("숫자1: "))
-result = ""
+result = "" # 변수의 초기화
 if num > 0:
     result = "양수"
 elif num < 0:
@@ -18,3 +18,5 @@ else:
     result = "제로"
 
 print("입력한 숫자는 %d 이며 %s 입니다." %(num, result))
+
+# 중복되는 코드는 최대한 작게
