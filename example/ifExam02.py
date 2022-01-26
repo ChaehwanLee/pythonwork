@@ -14,7 +14,7 @@ else:
 
 
 num = int(input("숫자1: "))
-result = "" # 변수의 초기화
+# result = "" # 변수의 초기화
 if num > 0:
     result = "양수"
 elif num < 0:
