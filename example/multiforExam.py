@@ -62,7 +62,16 @@ print("="*30)
     *****
 '''
 
+# for row in range(1, 6):
+#     for i in range(1, row+1):
+#         print("*", end="  ")
+#     print("")
+# print("=" * 30)
+
+# num = 1
 for row in range(1, 6):
+    # num = num+1
+    # print(row)
     for i in range(1, row+1):
         print("*", end="  ")
     print("")
