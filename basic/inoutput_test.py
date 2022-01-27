@@ -17,7 +17,8 @@ print(num1,num2, sep=',') # 구분자를 포함해서 출력
 # 서식문자를 활용해서 출력
 print("%d / %d = %d" % (100, 5, 20)) # %d 정수가 온다
 print("%d / %d = %d" % (num1, num2, num1/num2))
-print("%d / %d = %f" % (num1, num2, num1/num2))
+print("%d / %d = %f" % (num1, num2, num1/num2)) # %f는 소수자리 6자리가 기본
+print("%d / %d = %5.1f(%s)" % (num1, num2, num1/num2, "testtesttest"))
 
 # 한 줄에 여러 개의 값을 출력하기
 # -> 여러 print문을 한 줄로 출력할 때 사용하고 각각 출력되는 문자열의 끝에 end에 정의하는 값을 추가한다.
