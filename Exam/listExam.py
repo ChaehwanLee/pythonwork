@@ -37,9 +37,5 @@ print(len(p_list))
 for str in p_list:
     print(str, end="")
 
-print("-"*20)
-
-for str in p_list:
-    str = p_list
-    print(str, end="")
-
+for i in list(range(p_list)):
+    print(i, end=" ")
