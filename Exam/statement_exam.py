@@ -47,3 +47,4 @@ while True:
         print("생각하신 숫자가 컴퓨터가 발생시킨 숫자보다 작습니다. 다시 입력하세요")
 
 print("랜덤수:{}, 사용자가 입력한 숫자:{}, 실행횟수:{}".format(randomNum, userNum, count))
+# print("랜덤수:%d, 사용자가 입력한 숫자:%d, 실행횟수:%d" % (randomNum, userNum, count))
