@@ -30,12 +30,20 @@
 # python programming 으로 출력
 # gnimmargorp nohtyp의 형태로 출력 (mail)
 
-p_list = list('python programming')
-print(p_list)
-print(len(p_list))
+# import random
+#
+# p_list = list('python programming')
+# print(p_list)
+# print(len(p_list))
+#
+# for str in p_list:
+#     print(str, end="")
+#
+# for i in list(range(p_list)):
+#     print(i, end=" ")
 
-for str in p_list:
-    print(str, end="")
+import random
 
-for i in list(range(p_list)):
-    print(i, end=" ")
+num = 10
+print(random.randrange(1, num+1)) # 1부터 n-1 : 1~10 사이의 정수가 랜덤하게 리턴
+print(random.randint(1, num)) # 1부터 10사이의 정수가 랜덤하게 리턴
