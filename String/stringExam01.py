@@ -10,5 +10,5 @@
 # ===> 모두 for 문을 이용해서 작업하세요(이메일)
 
 str1 = print(str(input("문자를 입력하세요: ")))
-for i in str1:
-    print(len(str1[-1:]))
+for i in len(str1):
+    print(key, ":",str1[key])
