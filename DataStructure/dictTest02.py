@@ -15,3 +15,4 @@ print(1 in dict1) # 1이라는 키가 dict1이라는 딕셔너리에 존재하�
 print('1' in dict1)
 print(type('1'))
 print(type(1))
+
