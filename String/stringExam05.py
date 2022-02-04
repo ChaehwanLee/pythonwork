@@ -10,6 +10,24 @@
 # [출력형태]
 # {'p':16, 'y':50, ... } (mail)
 
+'''
+[step]
+    1. for문으로 문자를 출력하기
+        p
+        y
+        t
+        ...
+    2. 공백을 빼고 문자만 출력하기
+    3. for 문 밖에서 count 변수 선언하고 for 문이 실행될 때마다 count 변수에 1씩 더해서
+       for문이 종료된 후 count 변수 값 출력하기
+       count 값: _____
+    4. for 문 위에서 빈딕셔너리 추가하기
+    5. for 문 안에서 문자를 키로 1을 딕셔너리에 저장하기
+       count변수에 저장된 숫자만큼 딕셔너리에 값이 저장
+'''
+
+
+
 mystr = """
         Python is an easy to learn, powerful programming language. 
         It has efficient high-level data structures and a simple but 
@@ -18,3 +36,25 @@ mystr = """
         together with its interpreted nature, make it an ideal language for 
         scripting and rapid application development in many areas on most platforms.
         """
+
+# print(not "a".isalpha())
+dict1 = {1:"a",2:"b"}
+print(1 in dict1) # 1이라는 키가 dic1 이라는 딕셔너리의 키가 맞아?
+print(not 1 in dict1) # 1이라는 키가 없는 거 맞지? 1 in dic1 연산결과를 invert
+
+
+alphabetdic = dict()
+for c in mystr:
+    if c.isalpha(): # 문자인 경우만 체크하기 위해 if로 조건 적용
+        print(c)
+        c = c.lower() # 대소문자 구분없이 작업하기 위해 변경
+        # 키가 없는 경우는 딕셔너리에 추가하고 키가 있으면 키를 꺼내서 1을 더하기
+        if c in alphabetdic: # 딕셔너리에 키가 있는지 체크
+            alphabetdic[c] = alphabetdic[c] +1 # 수정
+        else:
+            alphabetdic[c] = 1 # 추가
+    # else:
+    #     # print("공백")
+    #     pass # 아무런 실행을 원하지 않을 때 정의하는 명령문 : if, for, while
+
+print(alphabetdic)
