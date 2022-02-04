@@ -30,5 +30,6 @@ print("="*50)
 mycount = 0
 for i in range(1, 10001):
     mycount = mycount + str(i).count("8")
-print("8의 횟수=", count)
+print("8의 횟수=", mycount)
+
 
